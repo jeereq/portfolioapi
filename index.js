@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routesHome);
 app.use("/admin", routesAdmin);
+//ajouter
 
 app.use((req, res) => {
 	res.status(404).render("Erreur", { title: "erreur page" });
